@@ -1,1 +1,10 @@
-<p>project-modal works! Minhaj Allah malik hai!</p>
+<div class="modal-header">
+    <h2>{{project.name}}</h2>
+    <button class="btn-close" (click)="bsModalRef.hide()"></button>
+</div>
+<div class="modal-body">
+    <carousel>
+        <slide><img src="assets/angular.png" alt="slide angular" style="display:block; width:100%"></slide>
+        <slide><img src="assets/typescript.png" ></slide>
+    </carousel>
+</div>
