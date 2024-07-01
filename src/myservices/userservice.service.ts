@@ -9,17 +9,21 @@ export class UserserviceService {
   projects:Project[]=[
     {id:0,
     name:'Aspire Investor Broker',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    summary:'Various Investor project profiles project',
-    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.HTML]
+    description:'Worked with clients like betaCapital,Cetera, Safra, Stockcross, Siebert for login, registrations and dashboard pages implementations.',
+    summary:'Developed application based on ADA compliance for all Broadridge Clients',
+    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.HTML],
+    pictures:['assets/betacap-login.png','assets/betacapital-regis.png','assets/siebert-login.png'],
+    projectLinks:['https://bcsec.investor.trading2.fast-trade.com/bcsecwealth/login.htm#/login','https://myaccount.iconnect2invest.com/bankr/login.do','https://stocx.investor.trading2.fast-trade.com/siebertnet/passwordrecoveryreset.do']
 
   },
   {id:1,
     name:'Asea Brown Boveri Project',
     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     summary:'this is the short description about developement',
-    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.CSS]
-
+    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.CSS],
+    pictures:['assets/ABB-dashboard.png'],
+    projectLinks:['https://sitemanager.ability.abb/#/auth/home'],
+    videoLink:['https://www.youtube.com/watch?v=tRMY5VV4VpQ']
   },
   {id:2,
     name:'Halliburton ',
@@ -28,10 +32,13 @@ export class UserserviceService {
     tags:[TagDetails.ANGULAR,TagDetails.HTML,TagDetails.NODEJS]
 
   },  {id:3,
-    name:'GE Current',
+    name:'Daintree DCS',
     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     summary:'Created interfaces for wac users for ioT Application',
-    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.HTML]
+    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.HTML],
+    pictures:['assets/daintree-dashboard.png','assets/daintree-site.png','assets/daintree-addsite.png'],
+    projectLinks:['https://www.led.com/controls-sensors/daintree-wireless-controls/daintree-controls-software','https://auth.st.daintree.io/login'],
+    videoLink:['https://www.youtube.com/watch?v=-8IxIRnSU4o','https://www.youtube.com/watch?v=_LyNrJeX0U8']
 
   }]
   constructor() { }

@@ -7,4 +7,6 @@ export interface Project{
     tags:TagDetails[];
     pictures?:string[];
     summary:string;
+    projectLinks?:string[],
+    videoLink?:string[]
 }
