@@ -1,9 +1,9 @@
 export class TagDetails{
 
     static readonly ANGULAR= new TagDetails('Angular','red');
-    static readonly TYPESCRIPT= new TagDetails('Typescript','blue');
+    static readonly TYPESCRIPT= new TagDetails('Typescript','BurlyWood');
     static readonly JAVASCRIPT= new TagDetails('Javascript','orange');
-    static readonly HTML= new TagDetails('Html','Gold');
+    static readonly HTML= new TagDetails('Html','Sienna');
     static readonly CSS= new TagDetails('CSS','darkblue');
     static readonly REACT= new TagDetails('React','purple');
     static readonly NODEJS= new TagDetails('NodeJS','green');
