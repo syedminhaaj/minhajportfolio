@@ -34,8 +34,8 @@ export class UserserviceService {
   },  {id:3,
     name:'Daintree DCS',
     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    summary:'Created interfaces for wac users for ioT Application',
-    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.HTML],
+    summary:'Implemented new features and optimized the code for better performance',
+    tags:[TagDetails.ANGULAR,TagDetails.TYPESCRIPT,TagDetails.AZURE],
     pictures:['assets/daintree-dashboard.png','assets/daintree-site.png','assets/daintree-addsite.png'],
     projectLinks:['https://www.led.com/controls-sensors/daintree-wireless-controls/daintree-controls-software','https://auth.st.daintree.io/login'],
     videoLink:['https://www.youtube.com/watch?v=-8IxIRnSU4o','https://www.youtube.com/watch?v=_LyNrJeX0U8']
@@ -53,5 +53,23 @@ export class UserserviceService {
      throw new Error("there is no project with the id"+id);
    }
    return projectIs;
+  }
+
+  getProjectsByFilter(filterTags:TagDetails[]){
+    let filteredProjects:Project[]=[];
+
+    this.projects.forEach(function(project){
+      let foundAll=true;
+
+      filterTags.forEach(function(filterTag:any){
+        if(project.tags.includes(filterTag) == false){
+          foundAll=false;
+        }
+      })
+      if(foundAll){
+        filteredProjects.push(project);
+      }
+    })
+    return filteredProjects;
   }
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { ModalModule} from 'ngx-bootstrap/modal';
 import {BsModalService} from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule} from 'ngx-bootstrap/carousel';
+import { CollapseModule} from 'ngx-bootstrap/collapse';
+import { AccordionModule} from 'ngx-bootstrap/accordion';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +32,13 @@ import { CarouselModule} from 'ngx-bootstrap/carousel';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
   ModalModule.forRoot(),
-  CarouselModule.forRoot()
+  CarouselModule.forRoot(),
+  CollapseModule.forRoot(),
+  AccordionModule.forRoot(),
+  FormsModule
     
   ],
   providers: [BsModalService],

@@ -1,1 +1,59 @@
-<p>resume works!</p>
+<div class="container text-center mt-3">
+    <button (click)="downloadFile()" class="btn btn-primary shadow border mb-3">Download PDF resume</button>
+<div class="pb-2">
+    <accordion [isAnimated]='true' class="shadow">
+        <accordion-group heading="Work Experience">
+            <div style="text-align: left">
+            <h3 class="mb-0">Tech Lead</h3>
+            <h4 class="text-primary">Larsen & Toubro Technology Services</h4>
+            <ul>
+                <li>Worked with micro front end architecture</li>
+                <li>Migrated the angular 8 application to latest angular 14 updated version and replaced libraries to angular material</li>
+                <li>Experience in working with Custom Directives, Controllers, Services, and filter modules in Angular</li>
+                <li>Created Dynamic forms which will be generated based on backend response</li>
+                <li>Managing application data using NgRx store utilizing action, reducers and Ajax calls using Effects and
+                    Rxjs Operators</li>
+            </ul>
+            </div>
+        </accordion-group>
+
+        <accordion-group heading="Education">
+            <div style="text-align: left">
+                <h3 class="mb-0">Master of Business Administration</h3>
+                <h4 class="text-primary">International Business University | Toronto, Canada.</h4>
+                <ul>
+                    <li>Currently enrolled in May 2024</li>
+                   
+                </ul>
+                </div>
+        </accordion-group>
+        <accordion-group heading="Skills">
+            <div style="text-align: left">
+                <div class="col">
+                <h3 class="mb-0">Programming Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="mb-0">Frameworks</h4>
+                <ul>
+                    <li>Angular</li>
+                    <li>Spring</li>
+                </ul>
+            </div>
+            <h3 class="mb-0">Other Skills</h3>
+                <ul>
+                    <li>Source Control Via Git</li>
+                    <li>MVC architecture</li>
+                    <li>Agile Development</li>
+                    <li>AWS & Azure</li>
+                </ul>
+                </div>
+        </accordion-group>
+    </accordion>
+</div>
+   
+</div>

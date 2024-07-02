@@ -12,13 +12,14 @@
 
         <div class="col-lg border m-1">
             <div class="text-center">
-                <h2>Feature Projects</h2>
-                <h4>Daintree iOT Web Application</h4>
-                <p class="mb-1">* Migrated Angular Web application from Angular 8 to the latest version.</p>
-                 <p class="mb-1">* Created Dynamic Form which will be generated based on backend response.</p>   
-                    <p class="mb-1">* Implemented drag and drop between tables functionality using Angular Material</p>
-                    <p class="mb-1">* Storing data using NgRx Store by dispatching actions and writing custom selectors and effects.</p>
-                    <p class="mb-1">* Good Experience in creating and maintaining RestAPI using spring boot.</p>    
+                <h3>Feature Projects</h3>
+                <h4>Daintree Control System(DCS)</h4>
+                <carousel >
+                    <slide *ngFor="let image of featureProject.pictures"><img src="{{image}}" alt="slide angular" style="display:block; width:100%"></slide>
+                    
+                </carousel>
+                <p class="mt-2">{{featureProject.summary}}</p>
+                <p>Visit the <b>Portfolio Section</b> to learn more</p>
             </div>
     </div>
 </div>
