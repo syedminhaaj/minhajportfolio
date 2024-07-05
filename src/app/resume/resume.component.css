@@ -6,3 +6,9 @@ accordion-group::ng-deep .card-header{
     background-color:#007bff;
 }
 
+.float-right{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    font-weight: bold;
+}
