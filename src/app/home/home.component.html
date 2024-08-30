@@ -1,25 +1,40 @@
 <div class="container">
-    <div class="row">
-        <div class="col-lg border m-1" height="800px">
-            <div class="text-center">
-                <h2>About Me</h2>
-                <img src="assets/myphoto.png" alt="test" width="210px" height="210px" class="rounded-circle">
-                <p>Tech Lead with over 7+ years of experience in software design, development, and implementation of web
-                    applications, seeking a position in a well-renowned organization. Dedicated to leveraging my expertise to
-                    contribute to company growth and development while utilizing my skills to drive impactful results.</p>
-            </div>
-        </div>
-
-        <div class="col-lg border m-1">
-            <div class="text-center">
-                <h3>Feature Projects</h3>
-                <h4>Daintree Control System(DCS)</h4>
-                <carousel >
-                    <slide *ngFor="let image of featureProject.pictures"><img src="{{image}}" alt="slide angular" style="display:block; width:100%"></slide>
-                    
-                </carousel>
-                <p class="mt-2">{{featureProject.summary}}</p>
-                <p>Visit the <b>Portfolio Section</b> to learn more</p>
-            </div>
+  <div class="row">
+    <div class="col-lg border m-1" height="800px">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img
+          src="assets/myphoto.png"
+          alt="test"
+          width="210px"
+          height="210px"
+          class="rounded-circle"
+        />
+        <p>
+          Tech Lead with over 7+ years of experience in software design,
+          development, and implementation of web applications, seeking a
+          position in a well-renowned organization. Dedicated to leveraging my
+          expertise to contribute to company growth and development while
+          utilizing my skills to drive impactful results.
+        </p>
+      </div>
     </div>
+
+    <div class="col-lg border m-1">
+      <div class="text-center">
+        <h3>Feature Projects</h3>
+        <h4>Daintree Control System(DCS)</h4>
+        <carousel>
+          <slide *ngFor="let image of featureProject.pictures"
+            ><img
+              src="{{ image }}"
+              alt="slide angular"
+              style="display: block; width: 100%"
+          /></slide>
+        </carousel>
+        <p class="mt-2">{{ featureProject.summary }}</p>
+        <p>Visit the <a href="portfolio">Portfolio Section</a> to learn more</p>
+      </div>
+    </div>
+  </div>
 </div>
