@@ -6,6 +6,7 @@ export class TagDetails {
   static readonly CSS = new TagDetails('CSS', 'darkblue');
   static readonly REACT = new TagDetails('React', 'purple');
   static readonly NODEJS = new TagDetails('NodeJS', 'green');
+  static readonly MYSQL = new TagDetails('MySql', 'darkSalmon');
   static readonly AZURE = new TagDetails('Azure', 'lightSalmon');
   static readonly JIRA = new TagDetails('Jira', 'Magenta');
   static readonly FIREBASE = new TagDetails('Jira', 'lightblue');

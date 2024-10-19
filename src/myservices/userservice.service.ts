@@ -72,14 +72,14 @@ export class UserserviceService {
     },
     {
       id: 4,
-      name: 'Personal Practice - Social Media App',
+      name: 'Social Media App - Feta',
       description:
-        'Developed Social Media project in ReactJS using Firebase Hosting and database, Where user can logged in using Google Authentication then add post, like, comment on post',
+        'Developed Social Media project in ReactJS ,NodeJS and MySql, Where user can register using Email OTP, log in then add post, like, comment on post',
       summary:
         'Social Media Application to add post, comment and like and unlike the post',
-      tags: [TagDetails.REACT, TagDetails.FIREBASE, TagDetails.JAVASCRIPT],
+      tags: [TagDetails.REACT, TagDetails.NODEJS, TagDetails.MYSQL],
       pictures: ['assets/addPost.png', 'assets/ViewPost.png'],
-      projectLinks: ['https://react-social-media-eb8e7.web.app/'],
+      projectLinks: ['https://reactnodesocialmedia-fe.onrender.com'],
     },
   ];
   constructor() {}
